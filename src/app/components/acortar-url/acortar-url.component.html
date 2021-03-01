@@ -1,0 +1,25 @@
+<app-error></app-error>
+<div class="container mt-4">
+    <div class="jumbotron">
+        <form (ngSubmit)="acortarUrl()">
+            <div class="row mb-3">
+                <div class="col-lg-8">
+                    <input type="text" class="form-control form-control-lg" [(ngModel)]="urlOriginal" name="urloriginal">
+                </div>
+                <div class="col-lg-4">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Acortar!</button>
+                </div>  
+            </div>   
+            <div class="row mb-3">
+                <div class="col-lg-8">
+                    <input type="text" class="form-control form-control-lg " readonly [(ngModel)]="urlAcortada" name="urlcorta">
+                </div>
+                <div class="col-lg-4">
+                    <button class="btn btn-primary btn-lg btn-block" (click)="copiarTexto()">Copiar</button>
+                </div>  
+            </div>                    
+        </form>
+    </div>
+</div>
+<app-spinner></app-spinner>
+

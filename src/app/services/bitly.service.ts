@@ -7,7 +7,6 @@ import { Observable } from 'rxjs';
 })
 export class BitlyService {
   url : string;
-  token : string;
 
   constructor(private http : HttpClient ) { 
     this.url = 'https://api-ssl.bitly.com/v4/shorten';

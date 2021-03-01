@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BitlyService } from 'src/app/service/bitly.service';
+import { BitlyService } from 'src/app/services/bitly.service';
 import { ErrorService } from 'src/app/shared/error/error.service';
 import { SpinnerService } from 'src/app/shared/spinner/spinner.service';
 
